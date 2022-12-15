@@ -1,0 +1,15 @@
+{
+    "name": "com.softboiledgames.ghostspriteeffect.Runtime",
+    "references": [
+        "GUID:aa824001246af694297f1bf4122ad37d"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
