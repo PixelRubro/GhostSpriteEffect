@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     [CustomPropertyDrawer(typeof(LeftToggleAttribute))]
     public class LeftToggleAttributeDrawer : BasePropertyDrawer 

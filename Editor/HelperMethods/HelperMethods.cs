@@ -5,7 +5,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes.Utilities
+namespace PixelSpark.GhostSprite.InspectorAttributes.Utilities
 {
     public class HelperMethods 
     {

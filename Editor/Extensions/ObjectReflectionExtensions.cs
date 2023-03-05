@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace SoftBoiledGames.GhostSpriteEffect.Extensions
+namespace PixelSpark.GhostSprite.Extensions
 {
     public static class ObjectReflectionExtensions 
     {

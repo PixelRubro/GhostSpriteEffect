@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System;
-using SoftBoiledGames.GhostSpriteEffect.Extensions;
+using PixelSpark.GhostSprite.Extensions;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     public abstract class BasePropertyDrawer: PropertyDrawer 
     {

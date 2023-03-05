@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Base class for comparison attributes.

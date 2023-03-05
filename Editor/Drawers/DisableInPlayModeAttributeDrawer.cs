@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     [CustomPropertyDrawer(typeof(DisableInPlayModeAttribute))]
     public class DisableInPlayModeAttributeDrawer : BasePropertyDrawer

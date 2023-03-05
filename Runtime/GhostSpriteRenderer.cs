@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace SoftBoiledGames.GhostSpriteEffect
+namespace PixelSpark.GhostSprite
 {
     public class GhostSpriteRenderer : MonoBehaviour
     {
@@ -38,9 +38,12 @@ namespace SoftBoiledGames.GhostSpriteEffect
             DecreaseAlpha();
         }
 
-        private void OnDisable()
+        private void OnEnable()
         {
-            _deactivationCallback?.Invoke();
+            if (_spriteRenderer != null)
+            {
+                _spriteRenderer.color = _initialColor;
+            }
         }
 
         #endregion
@@ -52,33 +55,33 @@ namespace SoftBoiledGames.GhostSpriteEffect
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _transform = transform;
         }
-
+        
         internal void SetDeactivationCallback(Action deactivationCallback)
         {
             _deactivationCallback = deactivationCallback;
         }
-
+        
         internal void SetInitialColor(Color color)
         {
             _initialColor = color;
         }
-
+        
         internal void SetLifespan(float lifespan)
         {
             _activeTimeLeft = lifespan;
             SetupAlphaDecrement();
         }
-
+        
         internal void SetPosition(Vector2 position)
         {
             _transform.position = position;
         }
-
+        
         internal void SetScale(Vector3 scale)
         {
             _transform.localScale = scale;
         }
-
+        
         internal void SetSpriteRendererValues(SpriteRenderer spriteRenderer)
         {
             _spriteRenderer.sortingOrder = spriteRenderer.sortingOrder;
@@ -92,12 +95,9 @@ namespace SoftBoiledGames.GhostSpriteEffect
 
         private void SetupAlphaDecrement()
         {
-            if (_alphaDecrement == 0f)
-            {
-                _alphaDecrement = 0f;
-            }
+            _alphaDecrement = 0.005f;
         }
-
+        
         private void DecreaseAlpha()
         {
             if (_spriteRenderer.color.a > 0f)
@@ -108,6 +108,7 @@ namespace SoftBoiledGames.GhostSpriteEffect
             }
             else
             {
+                _deactivationCallback?.Invoke();
                 gameObject.SetActive(false);
             }
         }

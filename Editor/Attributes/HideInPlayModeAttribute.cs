@@ -1,6 +1,6 @@
 using System;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Hide the field if it is in Play Mode.

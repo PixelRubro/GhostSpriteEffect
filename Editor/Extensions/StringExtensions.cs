@@ -1,7 +1,7 @@
 using System.Text.RegularExpressions;
 using System;
 
-namespace SoftBoiledGames.GhostSpriteEffect.Extensions
+namespace PixelSpark.GhostSprite.Extensions
 {
     public static class StringExtensions 
     {

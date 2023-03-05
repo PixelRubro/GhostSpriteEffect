@@ -1,4 +1,4 @@
-﻿namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+﻿namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Shows property if provided condition is met.

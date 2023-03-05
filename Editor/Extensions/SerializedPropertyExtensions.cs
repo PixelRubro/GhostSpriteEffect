@@ -2,12 +2,12 @@ using UnityEditor;
 using System;
 using System.Linq;
 using System.Reflection;
-using SoftBoiledGames.GhostSpriteEffect.InspectorAttributes;
-using SoftBoiledGames.GhostSpriteEffect.InspectorAttributes.Utilities;
+using PixelSpark.GhostSprite.InspectorAttributes;
+using PixelSpark.GhostSprite.InspectorAttributes.Utilities;
 
 #if UNITY_EDITOR
 
-namespace SoftBoiledGames.GhostSpriteEffect.Extensions
+namespace PixelSpark.GhostSprite.Extensions
 {
     public static class SerializedPropertyExtensions
     {

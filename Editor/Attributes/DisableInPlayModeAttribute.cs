@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes
+namespace PixelSpark.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Make the field read-only when the editor is in play mode.

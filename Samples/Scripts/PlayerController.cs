@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SoftBoiledGames.GhostSpriteEffect.Demo
+namespace PixelSpark.GhostSprite.Demo
 {
     public class PlayerController : MonoBehaviour
     {

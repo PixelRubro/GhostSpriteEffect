@@ -5,9 +5,9 @@ using System.IO;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using SoftBoiledGames.GhostSpriteEffect.Extensions;
+using PixelSpark.GhostSprite.Extensions;
 
-namespace SoftBoiledGames.GhostSpriteEffect.InspectorAttributes.Utilities
+namespace PixelSpark.GhostSprite.InspectorAttributes.Utilities
 {
     public static class EditorUtil
     {

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace SoftBoiledGames.GhostSpriteEffect
+namespace PixelSpark.GhostSprite
 {
-    [RequireComponent(typeof(ObjectPooler))]
+    [RequireComponent(typeof(GhostSpritePool))]
     public class GhostSpriteEffect : MonoBehaviour
     {
         #region Actions
@@ -45,13 +45,13 @@ namespace SoftBoiledGames.GhostSpriteEffect
 
         private SpriteRenderer _spriteRenderer;
 
-        private ObjectPooler _objectPooler;
-
-        private bool _isSetupFinished;
+        private GhostSpritePool _ghostSpritePool;
 
         private Transform _transform;
 
-        private float _currentSpawnTimeLeft;
+        private bool _isSetupFinished;
+
+        private float _spawnIntervalTimeLeft;
 
         private bool _isPlaying;
 
@@ -95,7 +95,7 @@ namespace SoftBoiledGames.GhostSpriteEffect
             }
 
             _isPlaying = true;
-            _currentSpawnTimeLeft = _spriteSpawnInterval;
+            _spawnIntervalTimeLeft = _spriteSpawnInterval;
         }
 
         /// <summary>
@@ -144,86 +144,82 @@ namespace SoftBoiledGames.GhostSpriteEffect
 
         private void RegisterComponents()
         {
-            _objectPooler = GetComponent<ObjectPooler>();
+            _ghostSpritePool = GetComponent<GhostSpritePool>();
             _spriteRenderer = GetComponent<SpriteRenderer>();
             _transform = transform;
         }
 
         private void SetupPool()
         {
-            _objectPooler.InitializePool(_initialSpriteCopies, _limitSpriteSpawning, CreateGhostSpritePrefab());
+            var prefab = CreateGhostSpritePrefab();
+            _ghostSpritePool.InitializePool(_initialSpriteCopies, _limitSpriteSpawning, prefab);
             _isSetupFinished = true;
         }
-
+        
         private void CheckSpawnInterval()
         {
             if (_isPlaying == false)
             {
                 return;
             }
-
-            if (_currentSpawnTimeLeft > 0f)
+        
+            if (_spawnIntervalTimeLeft > 0f)
             {
-                _currentSpawnTimeLeft -= Time.deltaTime;
+                _spawnIntervalTimeLeft -= Time.deltaTime;
                 return;
             }
-
-            _currentSpawnTimeLeft = _spriteSpawnInterval;
+        
+            _spawnIntervalTimeLeft = _spriteSpawnInterval;
             SpawnSprite();
         }
-
+        
         private void SpawnSprite()
         {
             var ghostSprite = GetConfiguredPooledSprite();
-
+        
             if (ghostSprite != null)
             {
                 ghostSprite.SetPosition(_transform.position);
             }
         }
-
+        
         private void SpawnSprite(Vector2 position)
         {
             var ghostSprite = GetConfiguredPooledSprite();
-
+        
             if (ghostSprite != null)
             {
                 ghostSprite.SetPosition(position);
             }
         }
-
+        
         private GhostSpriteRenderer GetConfiguredPooledSprite()
         {
-            var ghostSprite = _objectPooler.Pop();
-
+            var ghostSprite = _ghostSpritePool.Pop();
+        
             if (ghostSprite == null)
             {
                 return null;
             }
-
+        
             ghostSprite.SetInitialColor(_spriteInitialColor);
             ghostSprite.SetLifespan(_spriteLifespan);
             ghostSprite.SetSpriteRendererValues(_spriteRenderer);
             ghostSprite.SetScale(_transform.localScale);
-
-            if (gameObject.activeInHierarchy == false)
-            {
-                gameObject.SetActive(true);
-            }
-
+            ghostSprite.gameObject.SetActive(true);
             return ghostSprite;
         }
-
+        
         private GhostSpriteRenderer CreateGhostSpritePrefab()
         {
             var prefabObject = Instantiate(new GameObject(), null, false);
             prefabObject.name = "GhostEffectSpritePrefab";
-            prefabObject.AddComponent<GhostSpriteRenderer>();
             prefabObject.AddComponent<SpriteRenderer>();
+            prefabObject.AddComponent<GhostSpriteRenderer>();
             prefabObject.SetActive(false);
             return prefabObject.GetComponent<GhostSpriteRenderer>();
         }
 
-        #endregion    
+        #endregion
     }
 }
