@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace PixelSpark.GhostSprite.Extensions
+namespace VermillionVanguard.GhostSprite.Extensions
 {
     public static class ObjectReflectionExtensions 
     {

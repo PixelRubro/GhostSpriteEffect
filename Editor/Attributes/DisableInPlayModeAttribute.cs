@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Make the field read-only when the editor is in play mode.

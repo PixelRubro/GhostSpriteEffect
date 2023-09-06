@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Set the boolean checkbox at the left of the field's label.

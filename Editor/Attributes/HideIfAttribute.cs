@@ -1,4 +1,4 @@
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Hides property if provided condition is met.

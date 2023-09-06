@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     [CustomPropertyDrawer(typeof(ShowInPlayModeAttribute))]
     public class ShowInPlayModeAttributeDrawer : BasePropertyDrawer

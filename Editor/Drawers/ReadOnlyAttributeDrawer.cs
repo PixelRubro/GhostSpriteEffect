@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
     public class ReadOnlyAttributeDrawer : BasePropertyDrawer

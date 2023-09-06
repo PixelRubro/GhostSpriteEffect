@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite
+namespace VermillionVanguard.GhostSprite
 {
     public class GhostSpriteRenderer : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite
+namespace VermillionVanguard.GhostSprite
 {
     [RequireComponent(typeof(GhostSpritePool))]
     public class GhostSpriteEffect : MonoBehaviour

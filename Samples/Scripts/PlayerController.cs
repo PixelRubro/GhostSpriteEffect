@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite.Demo
+namespace VermillionVanguard.GhostSprite.Demo
 {
     public class PlayerController : MonoBehaviour
     {

@@ -1,4 +1,4 @@
-namespace PixelSpark.GhostSprite.Extensions
+namespace VermillionVanguard.GhostSprite.Extensions
 {
     public static class ObjectExtensions 
     {

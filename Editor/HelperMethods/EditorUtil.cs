@@ -5,9 +5,9 @@ using System.IO;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using PixelSpark.GhostSprite.Extensions;
+using VermillionVanguard.GhostSprite.Extensions;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes.Utilities
+namespace VermillionVanguard.GhostSprite.InspectorAttributes.Utilities
 {
     public static class EditorUtil
     {

@@ -2,12 +2,12 @@ using UnityEditor;
 using System;
 using System.Linq;
 using System.Reflection;
-using PixelSpark.GhostSprite.InspectorAttributes;
-using PixelSpark.GhostSprite.InspectorAttributes.Utilities;
+using VermillionVanguard.GhostSprite.InspectorAttributes;
+using VermillionVanguard.GhostSprite.InspectorAttributes.Utilities;
 
 #if UNITY_EDITOR
 
-namespace PixelSpark.GhostSprite.Extensions
+namespace VermillionVanguard.GhostSprite.Extensions
 {
     public static class SerializedPropertyExtensions
     {

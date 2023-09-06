@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Prevent a serialized field from being edited in inspector.

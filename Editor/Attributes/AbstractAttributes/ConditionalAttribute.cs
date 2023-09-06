@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Base class for comparison attributes.

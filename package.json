@@ -1,11 +1,11 @@
 {
-  "name": "com.pixelsparkstudio.ghostspriteeffect",
+  "name": "com.vermillionvanguard.ghostspriteeffect",
   "displayName": "Ghost Sprite Effect",
   "description": "Ghost effect for sprites in Unity.",
   "version": "0.0.1",
   "unity": "2019.4",
   "license": "MIT",
   "author": {
-    "name": "Pixel Spark Studio"
+    "name": "Vermillion Vanguard Studio"
   }
 }

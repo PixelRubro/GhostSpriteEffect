@@ -1,6 +1,6 @@
 using System;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Hide the field if it is in Play Mode.

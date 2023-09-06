@@ -5,9 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System;
-using PixelSpark.GhostSprite.Extensions;
+using VermillionVanguard.GhostSprite.Extensions;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     public abstract class BasePropertyDrawer: PropertyDrawer 
     {

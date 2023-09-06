@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PixelSpark.GhostSprite
+namespace VermillionVanguard.GhostSprite
 {
     internal class GhostSpritePool : MonoBehaviour
     {

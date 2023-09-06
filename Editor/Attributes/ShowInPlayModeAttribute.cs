@@ -4,7 +4,7 @@ using UnityEngine;
 
 using System;
 
-namespace PixelSpark.GhostSprite.InspectorAttributes
+namespace VermillionVanguard.GhostSprite.InspectorAttributes
 {
     /// <summary>
     /// Show the field only if it is in Play Mode.
